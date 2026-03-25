@@ -4,7 +4,7 @@ import logo from "../assets/logo.png";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] md:min-h-[70vh] flex items-center justify-center overflow-hidden bg-[#F8F9FA]">
+    <section className="relative min-h-[90vh] md:min-h-[70vh] flex items-center justify-center overflow-hidden bg-[#EDF1F5]">
 
       {/* BACKGROUND GIANT TEXT */}
       <div className="absolute top-[-22%] md:top-[-14%] left-1/2 -translate-x-1/2 w-full pointer-events-none select-none opacity-[0.04] flex flex-col items-center">
@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-6 relative z-10 grid grid-cols-1 md:grid-cols-3 items-center gap-6 md:gap-12">
 
         {/* LEFT TEXT */}
-        <div className="flex flex-col items-center md:items-start text-center md:text-left pr-6 lg:pr-10 translate-y-10 md:-translate-y-10 lg:-translate-y-14">
+        <div className="flex flex-col items-center md:items-start text-center md:text-left pr-6 lg:pr-10 -translate-y-10 md:-translate-y-10 lg:-translate-y-14">
           <h1 className="text-6xl lg:text-7xl font-extrabold uppercase leading-none tracking-tight text-slate-900" style={{ fontFamily: "'Syne', sans-serif" }}>
             THINK<br />
             <span className="shimmer-text">ELITE.</span>
@@ -236,70 +236,59 @@ height: "min(110vw, 470px)",
 
                 {/* Screen content */}
                 <div style={{
-                  position: "absolute",
-                  inset: 0,
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  paddingTop: 20,
-                }}>
+  position: "absolute",
+  inset: 0,
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+  color: "white",
+  textAlign: "center"
+}}>
+  {/* The Clock Section */}
+  <div style={{ marginBottom: "auto", paddingTop: "40px" }}>
+    <h1 style={{ 
+      fontSize: "3.5rem", 
+      fontWeight: "700", 
+      margin: 0, 
+      letterSpacing: "-2px",
+      fontFamily: "Inter, sans-serif" 
+    }}>
+      9:41
+    </h1>
+    <p style={{ 
+      fontSize: "0.8rem", 
+      opacity: 0.8, 
+      textTransform: "uppercase", 
+      letterSpacing: "2px" 
+    }}>
+      Wednesday, March 26
+    </p>
+  </div>
 
-                  {/* Time */}
-                  <div style={{
-                    fontFamily: "'Syne', sans-serif",
-                    fontSize: "3rem",
-                    fontWeight: 800,
-                    color: "white",
-                    letterSpacing: "-0.03em",
-                    lineHeight: 1,
-                    textShadow: "0 2px 20px rgba(0,0,0,0.3)",
-                  }}>
-                    9:41
-                  </div>
-                  <div style={{
-                    fontSize: "0.65rem",
-                    color: "rgba(255,255,255,0.6)",
-                    letterSpacing: "0.2em",
-                    textTransform: "uppercase",
-                    marginTop: 4,
-                    marginBottom: 28,
-                  }}>
-                    Wednesday
-                  </div>
+  {/* The Central Content (Matching your screenshot text) */}
+  <div style={{ padding: "0 20px" }}>
+    <h2 style={{ 
+      fontSize: "2.2rem", 
+      lineHeight: "1.1", 
+      fontWeight: "900", 
+      textTransform: "uppercase",
+      fontStyle: "italic"
+    }}>
+      UPGRADE <br/> YOUR <br/> DEVICE
+    </h2>
+  </div>
 
-                  {/* SWAP logo card on screen */}
-                  <div style={{
-                    width: 140,
-                    background: "rgba(255,255,255,0.1)",
-                    backdropFilter: "blur(12px)",
-                    border: "1px solid rgba(255,255,255,0.2)",
-                    borderRadius: 16,
-                    padding: "14px 18px",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    gap: 6,
-                    boxShadow: "0 8px 32px rgba(0,0,0,0.2)",
-                  }}>
-                    <img src={logo} alt="SWAP" style={{ width: 36, filter: "brightness(0) invert(1)", opacity: 0.9 }} />
-                    <span style={{ fontSize: "0.6rem", letterSpacing: "0.25em", color: "rgba(255,255,255,0.75)", textTransform: "uppercase", fontWeight: 600 }}>
-                      SWAP Store
-                    </span>
-                  </div>
-
-                  {/* Bottom bar */}
-                  <div style={{
-                    position: "absolute",
-                    bottom: 18,
-                    left: "50%",
-                    transform: "translateX(-50%)",
-                    width: 100,
-                    height: 4,
-                    borderRadius: 999,
-                    background: "rgba(255,255,255,0.35)",
-                  }} />
-                </div>
+  {/* Bottom Home Indicator */}
+  <div style={{
+    width: "120px",
+    height: "5px",
+    background: "rgba(255,255,255,0.4)",
+    borderRadius: "10px",
+    marginBottom: "20px",
+    marginTop: "auto"
+  }} />
+</div>
 
               </div>
 
