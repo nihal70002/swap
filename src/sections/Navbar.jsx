@@ -29,9 +29,10 @@ export default function Navbar() {
             Home
           </a>
 
-          <a href="#" className="hover:text-blue-600">
-            Products
-          </a>
+          <a href="#products" className="hover:text-blue-600">
+  Products
+</a>
+
 
           <a href="#" className="hover:text-blue-600">
             Offers

@@ -338,7 +338,7 @@ export default function Products() {
         }
       `}</style>
 
-      <section className="products-section">
+      <section id="products" className="products-section">
         <div className="products-inner">
 
           {/* Header */}
