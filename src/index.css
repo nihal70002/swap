@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+.shimmer-text {
+  position: relative;
+  display: inline-block;
+  color: #2563eb;
+  overflow: hidden;
+}
+
+.shimmer-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 120%;
+  height: 100%;
+
+  background: linear-gradient(
+    120deg,
+    transparent 30%,
+    rgba(255,255,255,0.7),
+    transparent 70%
+  );
+
+  animation: shimmerSweep 2.5s linear infinite;
+}
+
+@keyframes shimmerSweep {
+  to {
+    left: 120%;
+  }
+}
+
+/* must be OUTSIDE keyframes */
+.syne-tight {
+  font-family: 'Syne', sans-serif;
+  letter-spacing: -0.03em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
