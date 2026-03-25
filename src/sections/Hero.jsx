@@ -4,7 +4,7 @@ import logo from "../assets/logo.png";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] md:min-h-[70vh] flex items-center justify-center overflow-hidden bg-[#EDF1F5]">
+    <section className="relative min-h-[90vh] md:min-h-[70vh] flex items-center justify-center overflow-hidden bg-[#F8F9FA]">
 
       {/* BACKGROUND GIANT TEXT */}
       <div className="absolute top-[-22%] md:top-[-14%] left-1/2 -translate-x-1/2 w-full pointer-events-none select-none opacity-[0.04] flex flex-col items-center">
