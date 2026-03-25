@@ -17,11 +17,11 @@ export default function Hero() {
       </div>
 
       {/* HERO CONTENT GRID */}
-      <div className="max-w-6xl mx-auto px-6 relative z-10 grid grid-cols-3 items-center gap-6 md:gap-12">
+      <div className="max-w-6xl mx-auto px-6 relative z-10 grid grid-cols-3 items-center gap-2 md:gap-6 lg:gap-12">
 
         {/* LEFT TEXT */}
-        <div className="flex flex-col items-center md:items-start text-center md:text-left pr-6 lg:pr-10 -translate-y-10 lg:-translate-y-14 lg:-translate-y-14">
-          <h1 className="text-xl sm:text-3xl md:text-xl sm:text-3xl md:text-6xl lg:text-7xl font-extrabold uppercase leading-none tracking-tight text-slate-900" style={{ fontFamily: "'Syne', sans-serif" }}>
+        <div className="flex flex-col items-center md:items-start text-center md:text-left pr-1 md:pr-6 lg:pr-10 -translate-y-10 lg:-translate-y-14 lg:-translate-y-14">
+          <h1 className="text-xl sm:text-3xl md:text-6xl lg:text-7xl font-extrabold uppercase leading-none tracking-tight text-slate-900" style={{ fontFamily: "'Syne', sans-serif" }}>
             THINK<br />
             <span className="shimmer-text">ELITE.</span>
           </h1>
@@ -117,8 +117,8 @@ export default function Hero() {
             <div
               className="phone-shell"
               style={{
-                width: "min(38vw, 230px)",
-height: "min(80vw, 470px)",
+                width: "min(28vw, 230px)",
+height: "min(65vw, 470px)",
                 borderRadius: "3.2rem",
                 background: "linear-gradient(145deg, #1e293b 0%, #0f172a 60%, #1e3a5f 100%)",
                 padding: 3,
