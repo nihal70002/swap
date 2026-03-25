@@ -4,7 +4,7 @@ import logo from "../assets/logo.png";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] md:min-h-[70vh] flex items-center justify-center overflow-hidden bg-[#F8F9FA]">
+    <section className="relative min-h-[90vh] md:min-h-[70vh] flex items-center justify-center overflow-visible bg-[#F8F9FA]">
 
       {/* BACKGROUND GIANT TEXT */}
       <div className="absolute top-[-22%] md:top-[-14%] left-1/2 -translate-x-1/2 w-full pointer-events-none select-none opacity-[0.04] flex flex-col items-center">
@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-6 relative z-10 grid grid-cols-1 md:grid-cols-3 items-center gap-6 md:gap-12">
 
         {/* LEFT TEXT */}
-        <div className="hidden md:flex flex-col items-start text-left pr-6 lg:pr-10 -translate-y-10 lg:-translate-y-14">
+        <div className="flex flex-col items-center md:items-start text-center md:text-left pr-6 lg:pr-10 -translate-y-10 lg:-translate-y-14">
           <h1 className="text-6xl lg:text-7xl font-extrabold uppercase leading-none tracking-tight text-slate-900" style={{ fontFamily: "'Syne', sans-serif" }}>
             THINK<br />
             <span className="shimmer-text">ELITE.</span>
@@ -94,7 +94,7 @@ export default function Hero() {
             {/* Orbit ring 1 */}
             <div style={{
               position: "absolute",
-              inset: "-10vw",
+              inset: "-4vw",
               borderRadius: "50%",
               border: "1px dashed rgba(147,197,253,0.35)",
               pointerEvents: "none",
@@ -117,8 +117,8 @@ export default function Hero() {
             <div
               className="phone-shell"
               style={{
-                width: "min(55vw, 230px)",
-height: "min(110vw, 470px)",
+                width: "min(42vw, 200px)",
+height: "min(85vw, 360px)",
                 borderRadius: "3.2rem",
                 background: "linear-gradient(145deg, #1e293b 0%, #0f172a 60%, #1e3a5f 100%)",
                 padding: 3,
@@ -356,7 +356,7 @@ height: "min(110vw, 470px)",
         </div>
 
         {/* RIGHT TEXT */}
-        <div className="hidden md:flex flex-col items-start text-left pl-6 lg:pl-10 -translate-y-10 lg:-translate-y-14">
+        <div className="flex flex-col items-center md:items-start text-center md:text-left pl-6 lg:pl-10 -translate-y-10 lg:-translate-y-14">
           <h1 className="text-6xl lg:text-7xl font-extrabold uppercase leading-none tracking-tight text-slate-900" style={{ fontFamily: "'Syne', sans-serif" }}>
             Think <br />
             <span className="shimmer-text">SWAP.</span>
