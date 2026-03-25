@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-6 relative z-10 grid grid-cols-1 md:grid-cols-3 items-center gap-6 md:gap-12">
 
         {/* LEFT TEXT */}
-        <div className="flex flex-col items-center md:items-start text-center md:text-left pl-2 lg:pl-2 -translate-y-1 md:-translate-y-2 lg:-translate-y-2">
+        <div className="flex flex-col items-center md:items-start text-center md:text-left pr-6 lg:pr-10 translate-y-10 md:-translate-y-10 lg:-translate-y-14">
           <h1 className="text-6xl lg:text-7xl font-extrabold uppercase leading-none tracking-tight text-slate-900" style={{ fontFamily: "'Syne', sans-serif" }}>
             THINK<br />
             <span className="shimmer-text">ELITE.</span>
