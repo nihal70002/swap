@@ -17,11 +17,11 @@ export default function Hero() {
       </div>
 
       {/* HERO CONTENT GRID */}
-      <div className="max-w-6xl mx-auto px-6 relative z-10 grid grid-cols-3 items-center gap-2 md:gap-6 lg:gap-12">
+      <div className="max-w-6xl mx-auto px-6 relative z-10 grid grid-cols-1 md:grid-cols-3 items-center gap-6 md:gap-12">
 
         {/* LEFT TEXT */}
-        <div className="flex flex-col items-center md:items-start text-center md:text-left pr-1 md:pr-6 lg:pr-10 -translate-y-10 lg:-translate-y-14 lg:-translate-y-14">
-          <h1 className="text-xl sm:text-3xl md:text-6xl lg:text-7xl font-extrabold uppercase leading-none tracking-tight text-slate-900" style={{ fontFamily: "'Syne', sans-serif" }}>
+        <div className="flex flex-col items-center md:items-start text-center md:text-left pr-6 lg:pr-10 translate-y-10 md:-translate-y-10 lg:-translate-y-14">
+          <h1 className="text-6xl lg:text-7xl font-extrabold uppercase leading-none tracking-tight text-slate-900" style={{ fontFamily: "'Syne', sans-serif" }}>
             THINK<br />
             <span className="shimmer-text">ELITE.</span>
           </h1>
@@ -117,8 +117,8 @@ export default function Hero() {
             <div
               className="phone-shell"
               style={{
-                width: "min(28vw, 230px)",
-height: "min(65vw, 470px)",
+                width: "min(55vw, 230px)",
+height: "min(110vw, 470px)",
                 borderRadius: "3.2rem",
                 background: "linear-gradient(145deg, #1e293b 0%, #0f172a 60%, #1e3a5f 100%)",
                 padding: 3,
@@ -329,7 +329,7 @@ height: "min(65vw, 470px)",
           </div>
 
           {/* FEATURE BADGES */}
-          <div className="flex flex-row justify-center gap-4 mt-10">
+          <div className="hidden md:flex flex-row justify-center gap-4 mt-10">
             {[
               { icon: Thermometer, label: "Aerospace Grade" },
               { icon: Cpu, label: "Neural Processing" },
@@ -356,8 +356,8 @@ height: "min(65vw, 470px)",
         </div>
 
         {/* RIGHT TEXT */}
-        <div className="flex flex-col items-center md:items-start text-center md:text-left pl-6 lg:pl-10 -translate-y-10 lg:-translate-y-14 lg:-translate-y-14">
-          <h1 className="text-xl sm:text-3xl md:text-6xl lg:text-7xl font-extrabold uppercase leading-none tracking-tight text-slate-900" style={{ fontFamily: "'Syne', sans-serif" }}>
+        <div className="flex flex-col items-center md:items-start text-center md:text-left pl-6 lg:pl-10 -translate-y-10 md:-translate-y-10 lg:-translate-y-14">
+          <h1 className="text-6xl lg:text-7xl font-extrabold uppercase leading-none tracking-tight text-slate-900" style={{ fontFamily: "'Syne', sans-serif" }}>
             Think <br />
             <span className="shimmer-text">SWAP.</span>
           </h1>

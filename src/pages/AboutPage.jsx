@@ -12,6 +12,7 @@ import store5 from "../assets/gallery/store5.jpg";
 import store6 from "../assets/gallery/store6.jpg";
 import store7 from "../assets/gallery/store7.jpg";
 import store8 from "../assets/gallery/store8.jpg";
+import storefront from "../assets/gallery/swapppp.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -41,10 +42,6 @@ const fadeRight = {
 };
 
 export default function AboutPage() {
-
-    useEffect(() => {
-  window.scrollTo(0, 0);
-}, []);
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: heroRef,
@@ -214,8 +211,8 @@ export default function AboutPage() {
           className="relative overflow-hidden diagonal-clip noise"
           style={{
             background: "linear-gradient(135deg, #eff6ff 0%, #ffffff 60%, #dbeafe 100%)",
-            paddingBottom: "7rem",
-            paddingTop: "6rem",
+            paddingBottom: "3rem",
+            paddingTop: "1rem",
           }}
         >
           {/* Background grid dots */}
@@ -268,7 +265,7 @@ export default function AboutPage() {
               margin: "0 auto",
               padding: "0 2rem",
               display: "grid",
-              gridTemplateColumns: "1fr 1fr",
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
               gap: "4rem",
               alignItems: "center",
               position: "relative",
@@ -285,7 +282,7 @@ export default function AboutPage() {
 
               <h1
                 style={{
-                  fontSize: "clamp(2.4rem, 4vw, 3.6rem)",
+                  fontSize: "clamp(2rem, 3.2vw, 3rem)",
                   fontWeight: 800,
                   lineHeight: 1.1,
                   marginBottom: "1.5rem",
@@ -300,8 +297,8 @@ export default function AboutPage() {
                 style={{
                   color: "#475569",
                   fontSize: "1.1rem",
-                  lineHeight: 1.8,
-                  marginBottom: "1rem",
+                  lineHeight: 1.6,
+marginBottom: "0.6rem",
                   maxWidth: 480,
                 }}
               >
@@ -373,17 +370,20 @@ export default function AboutPage() {
                   }}
                 />
                 <motion.img
-                  src={logo}
-                  alt="SWAP Store"
-                  style={{
-                    width: 180,
-                    position: "relative",
-                    zIndex: 1,
-                    filter: "drop-shadow(0 20px 40px rgba(37,99,235,0.25))",
-                  }}
-                  animate={{ y: [0, -10, 0] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                />
+  src={storefront}
+  alt="SWAP Store Front"
+  style={{
+    width: "100%",
+    maxWidth: 650,
+    borderRadius: 20,
+    position: "relative",
+    zIndex: 1,
+    boxShadow: "0 30px 80px rgba(37,99,235,0.18)",
+    objectFit: "cover"
+  }}
+  animate={{ y: [0, -6, 0] }}
+  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+/>
               </div>
             </motion.div>
           </div>
@@ -396,7 +396,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             style={{
               maxWidth: 1200,
-              margin: "4rem auto 0",
+              margin: "2rem auto 0",
               padding: "0 2rem",
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
@@ -463,7 +463,7 @@ export default function AboutPage() {
               margin: "0 auto",
               padding: "0 2rem",
               display: "grid",
-              gridTemplateColumns: "1fr 1fr",
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
               gap: "5rem",
               alignItems: "center",
             }}
@@ -594,7 +594,7 @@ export default function AboutPage() {
             <div
               style={{
                 display: "grid",
-                gridTemplateColumns: "1fr 1fr",
+                gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
                 gap: "2rem",
               }}
             >
@@ -700,7 +700,7 @@ export default function AboutPage() {
             <div
               style={{
                 display: "grid",
-                gridTemplateColumns: "1fr 1fr",
+                gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
                 gap: "2rem",
               }}
             >
@@ -871,7 +871,7 @@ export default function AboutPage() {
             src={img}
             alt={`Store ${i}`}
             style={{
-              height: 320,
+              height: "clamp(160px, 28vw, 320px)",
               borderRadius: 16,
               objectFit: "cover",
               boxShadow: "0 8px 24px rgba(0,0,0,0.08)"
@@ -919,7 +919,7 @@ export default function AboutPage() {
             src={img}
             alt={`Store ${i}`}
             style={{
-              height: 320,
+              height: "clamp(160px, 28vw, 320px)",
               borderRadius: 16,
               objectFit: "cover",
               boxShadow: "0 8px 24px rgba(0,0,0,0.08)"
