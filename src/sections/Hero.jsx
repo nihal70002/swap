@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto px-6 relative z-10 grid grid-cols-1 md:grid-cols-3 items-center gap-6 md:gap-12">
 
         {/* LEFT TEXT */}
-        <div className="flex flex-col items-center md:items-start text-center md:text-left pr-6 lg:pr-10 -translate-y-10 lg:-translate-y-14">
+        <div className="flex flex-col items-center md:items-start text-center md:text-left pr-6 lg:pr-10 md:-translate-y-10 lg:-translate-y-14 mt-6">
           <h1 className="text-6xl lg:text-7xl font-extrabold uppercase leading-none tracking-tight text-slate-900" style={{ fontFamily: "'Syne', sans-serif" }}>
             THINK<br />
             <span className="shimmer-text">ELITE.</span>
@@ -329,7 +329,7 @@ height: "min(85vw, 360px)",
           </div>
 
           {/* FEATURE BADGES */}
-          <div className="flex flex-row justify-center gap-4 mt-10">
+          <div className="hidden md:flex flex-row justify-center gap-4 mt-10">
             {[
               { icon: Thermometer, label: "Aerospace Grade" },
               { icon: Cpu, label: "Neural Processing" },
