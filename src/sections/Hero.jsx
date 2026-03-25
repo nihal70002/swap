@@ -4,20 +4,20 @@ import logo from "../assets/logo.png";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-[#F8F9FA]">
+    <section className="relative min-h-[90vh] md:min-h-[70vh] flex items-center justify-center overflow-hidden bg-[#F8F9FA]">
 
       {/* BACKGROUND GIANT TEXT */}
       <div className="absolute top-[-22%] md:top-[-14%] left-1/2 -translate-x-1/2 w-full pointer-events-none select-none opacity-[0.04] flex flex-col items-center">
-        <h1 className="text-[22vw] font-black tracking-tight leading-none whitespace-nowrap" style={{ fontFamily: "'Syne', sans-serif" }}>
+        <h1 className="text-[40vw] md:text-[40vw] md:text-[22vw] font-black tracking-tight leading-none whitespace-nowrap" style={{ fontFamily: "'Syne', sans-serif" }}>
           THINK PREMIUM
         </h1>
-        <h1 className="text-[22vw] font-black tracking-tight leading-none whitespace-nowrap text-blue-700" style={{ fontFamily: "'Syne', sans-serif" }}>
+        <h1 className="text-[40vw] md:text-[40vw] md:text-[22vw] font-black tracking-tight leading-none whitespace-nowrap text-blue-700" style={{ fontFamily: "'Syne', sans-serif" }}>
           THINK SWAP
         </h1>
       </div>
 
       {/* HERO CONTENT GRID */}
-      <div className="max-w-6xl mx-auto px-6 relative z-10 grid md:grid-cols-3 items-center gap-12">
+      <div className="max-w-6xl mx-auto px-6 relative z-10 grid grid-cols-1 md:grid-cols-3 items-center gap-6 md:gap-12">
 
         {/* LEFT TEXT */}
         <div className="hidden md:flex flex-col items-start text-left pr-6 lg:pr-10 -translate-y-10 lg:-translate-y-14">
@@ -94,7 +94,7 @@ export default function Hero() {
             {/* Orbit ring 1 */}
             <div style={{
               position: "absolute",
-              inset: "-36px",
+              inset: "-10vw",
               borderRadius: "50%",
               border: "1px dashed rgba(147,197,253,0.35)",
               pointerEvents: "none",
@@ -105,7 +105,7 @@ export default function Hero() {
             {/* Orbit ring 2 */}
             <div style={{
               position: "absolute",
-              inset: "-56px",
+              inset: "-16px",
               borderRadius: "50%",
               border: "1px dashed rgba(147,197,253,0.18)",
               pointerEvents: "none",
@@ -117,8 +117,8 @@ export default function Hero() {
             <div
               className="phone-shell"
               style={{
-                width: 230,
-                height: 470,
+                width: "min(55vw, 230px)",
+height: "min(110vw, 470px)",
                 borderRadius: "3.2rem",
                 background: "linear-gradient(145deg, #1e293b 0%, #0f172a 60%, #1e3a5f 100%)",
                 padding: 3,
@@ -342,10 +342,10 @@ export default function Hero() {
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.4 + i * 0.1 }}
-                  className="flex items-center gap-3 bg-white/70 backdrop-blur-sm border border-gray-200 px-6 py-3 rounded-full shadow-sm"
+                  className="flex items-center gap-3 bg-white/70 backdrop-blur-sm border border-gray-200 px-3 py-2 md:px-6 md:py-3 rounded-full shadow-sm"
                 >
                   <Icon className="w-4 h-4 text-blue-600" />
-                  <span className="text-[10px] font-bold tracking-widest uppercase text-gray-600">
+                  <span className="text-[8px] md:text-[10px] font-bold tracking-widest uppercase text-gray-600">
                     {item.label}
                   </span>
                 </motion.div>
